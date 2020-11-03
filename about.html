@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-12 text-center text-lg-right">
+          <ul class="list-inline">
+           
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="cart.html">MY CART <i class="fa fa-shopping-cart"></i></a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="checkout.html">checkout</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100 bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item @@PRODUCTS">
+              <a class="nav-link" href="courses.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item @@video">
+              <a class="nav-link" href="video.html">VIDEOS</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                     <a href="promotor.html" class="btn btn-primary btn-sm">promotor's registration</a>
+           <a href="customer.html" class="btn btn-primary btn-sm">customer's registration</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section" >
+  <div class="container">
+   
+
+  
+  <div class="container bg-white" >
+    <div class="row align-items-center">
+      <div class="col-md-12 order-2 order-md-1">
+        <h2 class="section-title">About Mylearningkits</h2>
+        <p>Mylearningkits is an initiative to revaluate the experimental education system of schools which will encapsulate the culture of science in students with help of new aids of electronics technologies. In order to mitigate the gap between the student's concepts & creativity with modern industry visualization, we adhere the protocols of industry with realistic design of experimental kits on printed circuit board.
+
+Specialty of design is that there is no requirement of sharp mechanical tools and soldering activity by just providing push-fit mechanism to implement experiments. Kits are designed to provide experimental demonstration of laws and theorem of school courses interactively so that students can learn theorems, laws, rules and logics by just playing as a game.
+
+Experimenting these kits; student will be able to learn the concepts of logic gates, Ohm's law, Kirchoff's voltage law, kirchoff's current law, voltage divider rule, law of magnetism, photoelectric effect, photo-resistive effect, diode biasing, lenz's law, electromagnetism, mutual inductance, series parallel combination of resistances, capacitive touch sense, voltmeter working, Piezoelectric effect, concept of potentiometer, electrical conductivity, thermoelectric effect.
+</p>
+        <p><b>Product description</b>
+Mylearningkitsprovides a range of experimental kits to create an innovative culture and boost problem recognizing & solving capabilities between aspirants from schools. We are responsible to design kits on the behalf a deep study of their magical effects on student's brain. In order to meet the theme behind our concept, Mylearningkits team continuously engage with academic professors, researchers from industries. So we developed individual kit for different standards.</p>
+<p>
+<b>Roboconnect</b>: Basic push-fit robotic models like line follower, beam follower and obstacle avoider for playgroup and primary students.</p>
+
+<p><b>Pick&Connect</b>: This model have basic electronics components like resistor, capacitor, switch, transistor, LDR, buzzer mice, reed switch, touch switch, motor, battery using which middle class student can learn and perform more than 30 experiment to understand the basic logics, laws and theorems so that they can interact with upcoming world technologies.</p> 
+
+<p><b>Connect to create</b>: This model includes basic electronics components with semiconductors devices and digital multimeter to measure voltage levels at different junctions. This model is suitable for middle class and high school students.</p>
+
+<p><b>Playduino</b>: This model is designed to provide a programming based platform to enhance the logic building and implementing C programming sets to solve desired problems using most famous Arduino Uno board. Aspirants can use sensors and actuators to develop their projects regarding embedded system and robotics. </p>
+
+<p><b>ExpIOT</b>: This is an experimental model of internet of things introduce latest IoT (internet of things) technology in practical package. This model is best suited for 8th standard students to engineering scholars which helps you to connect multiple sensors to your programming platform and control alongwith monitoring your devices and actuators. Aspirant can learn how to build IoT android application on our youtube channel: mylearningkits(mylearningkits@gmail.com) posted bySapro.
+
+</p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+< <!-- footer content -->
+ <div class="footer bg-footer section border-bottom">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          
+        </div>
+        <!-- company -->
+        <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h6 class="text-white mb-5">Sapro Electronics and Electricals (Ind) Pvt Ltd</h6>
+          <div><p> 1st Floor, Prem Market</p></div>
+      <div><p> Oppo Drizzling Land,NH-58</p></div>
+      <div><p> Duhai Ghaziabad, U.P </p></div>
+      <div><P> +91-9667897166, 9719666865 </P></div>
+        </div>
+        <!-- links -->
+        <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <li class="mb-3"><a class="text-color" href="video.html">videos</a></li>
+            <li class="mb-3"><a class="text-color" href="PRODUCTS.html">products</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © mylearningkits</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

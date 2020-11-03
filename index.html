@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        
+        <div class="col-lg-12 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="cart.html">my cart <i class="fa fa-shopping-cart"></i></a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="checkout.html">checkout</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100 bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item @@PRODUCTS">
+              <a class="nav-link" href="courses.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item @@video">
+              <a class="nav-link" href="video.html">VIDEOS</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <a href="promotor.html" class="btn btn-primary btn-sm">promotor's registration</a>
+           <a href="customer.html" class="btn btn-primary btn-sm">customer's registration</a>
+         </div>
+                  
+ 
+                  
+  
+                  
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="mobile number">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section bg-dark ">
+      <div class="container-lg-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/examples/images/slide1.png" alt="First Slide">
+            </div>
+            <div class="carousel-item">
+                <img src="/examples/images/slide2.png" alt="Second Slide">
+            </div>
+            <div class="carousel-item">
+                <img src="/examples/images/slide3.png" alt="Third Slide">
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+</section>
+     
+
+<!-- banner-feature -->
+
+
+<!-- about us -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">About Mylearningkits</h2>
+        <p>Mylearningkits is an initiative to revaluate the experimental education system of schools which will encapsulate the culture of science in students with help of new aids of electronics technologies. In order to mitigate the gap between the student's concepts & creativity with modern industry visualization, we adhere the protocols of industry with realistic design of experimental kits on printed circuit board.
+
+Specialty of design is that there is no requirement of sharp mechanical tools and soldering activity by just providing push-fit mechanism to implement experiments. Kits are designed to provide experimental demonstration of laws and theorem of school courses interactively so that students can learn theorems, laws, rules and logics by just playing as a game.
+</p>
+        <a href="about.html" class="btn btn-primary-outline">Learn more</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about us -->
+
+<!-- courses -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Our products</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+      <div class="card-body">
+       <!-- <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single.html">
+          <h4 class="card-title">Photography</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">show details</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single1.html">
+          <h4 class="card-title">Programming</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course.html" class="btn btn-primary btn-sm">show details</a>
+        
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single2.html">
+          <h4 class="card-title">Lifestyle Archives</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course.html" class="btn btn-primary btn-sm">show details</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single3.html">
+          <h4 class="card-title">Complete Freelancing</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course.html" class="btn btn-primary btn-sm">show details</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
+      <div class="card-body">
+        
+        <a href="course-single4.html">
+          <h4 class="card-title">Branding Design</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course.html" class="btn btn-primary btn-sm">show details</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
+      <div class="card-body">
+       
+        <a href="course-single5.html">
+          <h4 class="card-title">Art Design</h4>
+        </a>
+        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna.</p>
+        <a href="course.html" class="btn btn-primary btn-sm">show details</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /course list -->
+    <!-- mobile see all button -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="courses.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /courses -->
+
+
+
+<!-- footer -->
+<footer>
+  
+  <!-- footer content -->
+ <div class="footer bg-footer section border-bottom">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          
+        </div>
+        <!-- company -->
+        <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h6 class="text-white mb-5">Sapro Electronics and Electricals (Ind) Pvt Ltd</h6>
+          <div><p> 1st Floor, Prem Market</p></div>
+      <div><p> Oppo Drizzling Land,NH-58</p></div>
+      <div><p> Duhai Ghaziabad, U.P </p></div>
+      <div><P> +91-9667897166, 9719666865 </P></div>
+        </div>
+        <!-- links -->
+        <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <li class="mb-3"><a class="text-color" href="video.html">videos</a></li>
+            <li class="mb-3"><a class="text-color" href="PRODUCTS.html">products</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © mylearningkits</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
